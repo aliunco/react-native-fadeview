@@ -22,7 +22,7 @@ yarn add react-native-fadeview-wrapper
 
 ```tsx
 import React, { Component } from 'react';
-import FadeView from 'react-native-fadeview-wrapper';
+import { FadeView } from 'react-native-fadeview-wrapper';
 
 const Example = () => {
 
