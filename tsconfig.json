@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "es6",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "declaration": true,
+        "skipLibCheck": true,
+        "lib": [
+            "es2019",
+            "dom"
+        ],
+        "outDir": "./lib",
+        "strict": true,
+        "noUnusedLocals": true,
+        "noImplicitAny": false,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": ".",
+        "paths": {},
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "lib"
+    ]
+}
