@@ -1,12 +1,12 @@
 {
   "name": "react-native-fadeview-wrapper",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Ali Saeedifar <aliunco90@gmail.com>",
   "description": "A handy fadeview component for the react native",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "install": "npm run build",
+    "prepare": "npm run build",
     "build": "rm -rf lib && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
