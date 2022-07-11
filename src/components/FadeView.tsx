@@ -23,7 +23,7 @@ type Props = {
     [x: string]: any
 }
 
-const FadeView = ({ 
+export const FadeView = ({ 
     style, 
     visible, 
     children, 
@@ -100,6 +100,4 @@ const FadeView = ({
             { visibleState && children }
         </Animated.View>
     )
-}
-
-export default FadeView
+};
