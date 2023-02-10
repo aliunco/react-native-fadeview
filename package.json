@@ -1,6 +1,6 @@
 {
   "name": "react-native-fadeview-wrapper",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Ali Saeedifar <aliunco90@gmail.com>",
   "description": "A handy fadeview component for the react native",
   "main": "lib/index.js",
@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/aliunco/react-native-fadeview/issues"
   },
-  "homepage": "https://github.com/aliunco/react-native-fadeview#readme"
+  "homepage": "https://github.com/aliunco/react-native-fadeview#readme",
+  "files": [
+    "/lib"
+  ]
 }
