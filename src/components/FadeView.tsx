@@ -1,5 +1,5 @@
 import React from "react";
-import { Animated, Easing, StyleProp, ViewProps, ViewStyle } from "react-native";
+import { Animated, Easing, EasingFunction, StyleProp, ViewProps, ViewStyle } from "react-native";
 
 export enum Bearing {
   Top,
@@ -14,6 +14,7 @@ type Props = ViewProps & {
   style?: StyleProp<ViewStyle>;
   children?: React.ReactNode;
   entranceBearing?: Bearing;
+  easing?: EasingFunction;
   leaveBearing?: Bearing;
   fadeOutScale?: number;
   duration?: number;
@@ -30,6 +31,7 @@ const FadeView = ({
     visible,
     children,
     duration = 200,
+    easing = Easing.inOut(Easing.linear),
     fadeOutScale = 1.1,
     shouldEnterWithAnimation,
     bearingMoveDistance = 50,
@@ -63,9 +65,9 @@ const FadeView = ({
     applyingVisibleState.current = visible;
 
     theAnimation.current = Animated.timing(visibilityAnimValue, {
-      toValue: visible ? 1 : 0,
+      easing,
       duration,
-      easing: Easing.inOut(Easing.linear),
+      toValue: visible ? 1 : 0,
       useNativeDriver: true,
     });
 

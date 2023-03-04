@@ -52,6 +52,7 @@ here is the properties and the descriptions of it:
 | shouldEnterWithAnimation | `false` | `boolean` | `NO` | if it's `true`, then the first state of `visible` would be presented by animation |
 | style | `undefined` | `ViewStyle` | `NO` | optinal style for the fadeview itself |
 | bearingMoveDistance| 50 | `number` | `NO` | option distance when you pass the directional Bearing for entrance or leave |
+| easing | `Easing.inOut(Easing.linear)` | `EasingFunction` | `NO` | Change the Easing function of the animation here |
 | removeChildrenAfterDisapearance| `false` | `boolean` | `NO` | you can choose if you want the children view to be removed after disappearance | 
 | children | `undefined` | `JSX.Element` | `JSX.Element[]` | `NO` | child component(s) in order to have the fade animation |
 | entranceBearing | `Bearing.Center` | `Bearing` | `NO` | entrance animation with can be determined by `Bearing` enum from the lib, values: `Top`, `Bottom`, `Left`, `Right` , `Center` |
